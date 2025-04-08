@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cash Register</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Cash Register</h1>
+    <form id="change-form">
+      <label for="cash">Enter Cash Amount</label>
+      <input id="cash" type="number" step="0.01" />
+      <div id="change-due"></div>
+      <button id="purchase-btn" type="submit">Purchase</button>
+    </form>
+
+    <div id="purchase-info">
+      <h2>Purchase</h2>
+      <p>Total: $<span id="total">3.26</span></p>
+    </div>
+
+    <div id="drawer-info">
+      <h2>Change in Drawer</h2>
+      <ul id="change-list">
+        <li>Pennies: $<span id="pennies">1.01</span></li>
+        <li>Nickels: $<span id="nickels">2.05</span></li>
+        <li>Dimes: $<span id="dimes">3.10</span></li>
+        <li>Quarters: $<span id="quarters">4.25</span></li>
+        <li>Ones: $<span id="ones">90</span></li>
+        <li>Fives: $<span id="fives">55</span></li>
+        <li>Tens: $<span id="tens">20</span></li>
+        <li>Twenties: $<span id="twenties">60</span></li>
+        <li>Hundreds: $<span id="hundreds">100</span></li>
+      </ul>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
