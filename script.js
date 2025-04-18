@@ -39,8 +39,8 @@ purchaseBtn.addEventListener("click", function(e) {
     message.innerHTML = "No change due - customer paid with exact cash";
   }
   else {
-    var balance = parseFloat((cash - price).toFixed(2));
-    if (Math.abs(balance % 0.05) > 0.001) {
+    var balance = Math.round(parseFloat((cash - price).toFixed(2)) * 100);
+    if (balance % 5 !== 0) {
       alert("The balance cannot be given accurately with the available denominations. (Note we don't have 1 sen. Make sure the amount and total ends with 5 or 0)");
       return;
     }
