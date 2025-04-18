@@ -10,28 +10,31 @@
     <h1>Cash Register</h1>
     <form id="change-form">
       <label for="cash">Enter Cash Amount</label>
-      <input id="cash" type="number" step="0.01" />
+      <input id="cash" type="number" step="0.05" />
       <div id="change-due"></div>
       <button id="purchase-btn" type="submit">Purchase</button>
     </form>
 
     <div id="purchase-info">
       <h2>Purchase</h2>
-      <p>Total: $<span id="total">3.26</span></p>
+      <label for="total">Total: RM</label>
+      <input id="total" type="number" step="0.05" />
+      <div id="total-message"></div>
     </div>
 
     <div id="drawer-info">
       <h2>Change in Drawer</h2>
       <ul id="change-list">
-        <li>Pennies: $<span id="pennies">1.01</span></li>
-        <li>Nickels: $<span id="nickels">2.05</span></li>
-        <li>Dimes: $<span id="dimes">3.10</span></li>
-        <li>Quarters: $<span id="quarters">4.25</span></li>
-        <li>Ones: $<span id="ones">90</span></li>
-        <li>Fives: $<span id="fives">55</span></li>
-        <li>Tens: $<span id="tens">20</span></li>
-        <li>Twenties: $<span id="twenties">60</span></li>
-        <li>Hundreds: $<span id="hundreds">100</span></li>
+        <li>5 sen: <span id="5sen"></span></li>
+        <li>10 sen: <span id="10sen"></span></li>
+        <li>20 sen: <span id="20sen"></span></li>
+        <li>50 sen: <span id="50sen"></span></li>
+        <li>RM 1: <span id="RM1"></span></li>
+        <li>RM 5: <span id="RM5"></span></li>
+        <li>RM 10: <span id="RM10"></span></li>
+        <li>RM 20: <span id="RM20"></span></li>
+        <li>RM 50: <span id="RM50"></span></li>
+        <li>RM 100: <span id="RM100"></span></li>
       </ul>
     </div>
 
